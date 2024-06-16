@@ -29,18 +29,7 @@ public class Habitation extends Item {
     private String type;
     private int places;
     private int disponibles = places;
-    public Habitation(String location, String type, int places, String caracteristiques) {
-        this.location = location;
-        this.type = type;
-        this.places = places;
-        this.caracteristiques = caracteristiques;
-        disponibles = places;
-    }
-    
-    
-    public Habitation() {
-        super();
-    }
+   
     @Column(columnDefinition = "TEXT")
     private String caracteristiques;
     

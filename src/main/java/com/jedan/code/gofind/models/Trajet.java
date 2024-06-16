@@ -32,20 +32,7 @@ public class Trajet extends Item {
     private String arrivee;
     private LocalDateTime dateDepart;
     private int places;
-    private int disponibles = places;
-    
-    public Trajet(){
-        super();
-    }
-
-    public Trajet(String depart, String arrivee, LocalDateTime dateDepart, int places) {
-        this.depart = depart;
-        this.arrivee = arrivee;
-        this.dateDepart = dateDepart;
-        this.places = places;
-        disponibles = places;
-    }
-    
+    private int disponibles = places;    
     
     @Override
     public String description(){

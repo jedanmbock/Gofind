@@ -36,6 +36,7 @@ public class HabitationService {
     public Habitation save(Habitation habitation){
         if(habitation.getId() == null){
             habitation.setDatePublication(LocalDateTime.now());
+            habitation.setDisponibles(habitation.getPlaces());
         }
         return habitationRepository.save(habitation);
     }

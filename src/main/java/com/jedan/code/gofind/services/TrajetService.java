@@ -36,6 +36,7 @@ public class TrajetService {
     public Trajet save(Trajet trajet){
         if(trajet.getId() == null){
             trajet.setDatePublication(LocalDateTime.now());
+            trajet.setDisponibles(trajet.getPlaces());
         }
         return trajetRepository.save(trajet);
     }
